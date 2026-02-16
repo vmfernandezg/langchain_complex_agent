@@ -70,7 +70,7 @@ def main() -> None:
                             f"  🛠️  Decidiendo usar herramienta: {tool_call['name']} "
                             f"(args: {tool_call['args']})"
                         )
-                
+
                 # Check for Tool Outputs (FunctionMessage or ToolMessage)
                 # In LangGraph/LangChain, tool outputs are typically ToolMessage
                 elif last_msg.type == "tool":
